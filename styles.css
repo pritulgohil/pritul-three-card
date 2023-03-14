@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color:white;
+}
+
+.main{
+    background-color: azure;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    width:60%;
+    display: flex;
+    height:450px;
+    border-radius: 20px;
+    max-width: 1000px;
+}
+
+.card1{
+    width: 35%;
+}
+
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top:20px;
+}
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-top:20px;
+    color:rgb(235, 235, 235);
+}
+
+button{
+    padding: 10px 25px 10px 25px;
+    border-radius: 20px;
+    border-style: none;
+    font-size: 0.9rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn1{
+    color: hsl(31, 77%, 52%);
+}
+
+.btn2{
+    color: hsl(184, 100%, 22%);
+}
+
+.btn3{
+    color: hsl(179, 100%, 13%);
+}
+
+.text{
+    height:100%;
+    padding: 5% 15% 5% 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.orange{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.green{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.dark-green{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+@media only screen and (max-width: 810px){
+    .cards{
+        width:90%;
+    }
+}
+
+@media only screen and (max-width: 620px){
+    .cards{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        height:unset;
+        padding-top:15%;
+        padding-bottom: 15%;
+    }
+
+    .card1{
+        width:95%;
+        height:350px;
+    }
+
+    .main{
+        background-color: azure;
+        height:unset;
+        display: unset;
+        justify-content: unset;
+        align-items: unset;
+    }
+
+    .orange{
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: unset;
+    }
+
+    .dark-green{
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 20px;
+    }
+}
